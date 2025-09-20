@@ -24,6 +24,7 @@ LightGBM là một framework cho thuật toán Gradient Boosting Decision Tree (
 + Hỗ trợ parallel learning, GPU learning.
 + Xử lý tốt cả dữ liệu categorical mà không cần phải one-hot encode.
 
+
 1. Histogram-based: 
 1. Chọn số lượng bin(thùng) B
 2. Tính toán chiều rộng của thùng = (max - min)/ B
@@ -31,10 +32,12 @@ LightGBM là một framework cho thuật toán Gradient Boosting Decision Tree (
 
 Ví dụ: có dữ liệu 1 2 3 4 5, Các chọn ngưỡng bình thường sẽ có 4 ngưỡng : [1.5, 2.5, 3.5, 4.5]. Áp dụng histogram vào, chọn B = 2 ==> chiều rộng = (5-1)/ 2 = 2 ==> ngưỡng mới sẽ là [1, 3, 5]  
 
+
 2. Leaf-wise Growth:
 Sự khác nhau giữa Level_wise và Leaf_wise là gì?
 + Level-wise: chia từng tầng một, tất cả các node cùng 1 tầng sẽ cùng chia đồng thời
 + Leaf-wise : chỉ chọn lá có Gain lớn nhất để 
+
 
 3. Exckusive Feature Bundling: 
 Trong nhiều bài toán (ví dụ: one-hot encoding..), có hàng ngàn đặc trưng, nếu lưu trữ và tính toán cho từng đặc trưng riêng biệt --> rất tốn bộ nhớ
@@ -51,6 +54,7 @@ Ta sẽ sử dụng One_hot_encoding:
 | 2      | 0   | 0    | 1     |
 
 Ta có thể gộp từ 3 hàng thành 1 hàng 'sample' để tiết kiệm dung lượng bộ nhớ. 
+
 
 4. Gradient-based One-Side Sampling (GOSS):
 GOSS chọn mẫu thông minh hơn dựa trên gradient:
