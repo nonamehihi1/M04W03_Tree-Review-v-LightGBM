@@ -78,3 +78,13 @@ Ta thấy:
 + C và A có gradient lớn --> giữ chắc chắn
 + B và E có gradient nhỏ --> chọn ngẫu nhiên(có thể giữ 1 trong 2)
 + D ~ 0 --> có thể bỏ
+
+
+Bài tập:
+<img width="542" height="74" alt="image" src="https://github.com/user-attachments/assets/e45ce361-343b-436b-b5d8-479c6ab61689" />
+
+với a = 0.5 ==> mẫu sẽ chọn ra 2 gradient lớn nhất 0.9, 0.2, và còn lại sẽ là 2 mẫu 0.1 và 0.05, mà b = 0.5 nên chọn 1 trong 2. Trong đầu bài chọn = 0.1 ==> s = (1-a)/b = (1-0.5)/ 0.5 = 1 ==> kết quả = 0.9 + 0.2 + 1*0.1 = 1.2
+
+<img width="566" height="51" alt="image" src="https://github.com/user-attachments/assets/723e41fb-fa43-4cfe-bc59-c55fb144a4ec" />
+Ta có wieght = G/ (H + lamda), mà trong bài toán hồi quy H = 1 ==> (1.5 + 2.5 -1) / (1 + 1 + 1 + 0) = 
+
